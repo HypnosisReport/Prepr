@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prepr | Home</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/prepr.css">
+  <script type="text/javascript" src="js/prep.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+</head>
+
+
+<body>
+    
+
+<!-- NAVBAR -->
+<div class="navBar">
+    <a href="#" class="barItem"><i class="fa fa-pagelines fa-lg"></i></a>
+    <a href="index.html" class="barItem navButton active">Recipes</a>
+    <a href="pages/prep.html" class="barItem navButton">Prep</a>
+    <a href="pages/contact.html" class="barItem navButton">Contact</a>
+  </div>
+
+
+<!-- FORM -->
+
+<div class="bg-img">
+    <div class="wrap">
+        <div class="search">
+           <input type="search" class="searchTerm" placeholder="e.g, Chinese, sandwich, vegetarian" id="search" 
+           onclick="getrecipe(document.getElementById('search').value)">
+           <button type="submit" onclick="getrecipe(document.getElementById('search').value)" class="searchButton btn">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+    
+</div>
+ <!--  
+  
+      <input type="" id="search" 
+      onclick="getrecipe(document.getElementById('search').value)">
+
+  <button type="submit" class="btn"  onclick="getrecipe(document.getElementById('search').value)">Search Recipes</button>
+
+ -->
+  
+  
+     
+
+<!--LOAD SPOONACULAR RECIPES-->
+
+     <section id="output">
+        
+        <div class="outputDiv" id="div1"></div>
+        <div class="outputDiv" id="div2"></div>
+        <div class="outputDiv" id="div3"></div>
+
+        <!--<a href="" id="sourceLink"></a>-->
+                       
+    
+ </section>
+ 
+<!--FOOTER-->
+     <footer>
+        <h5 id="signOff" style="text-align:center">Juliette Curran ❤ Code First Girls 2020</h5>
+    
+        <div id="socials" class="footerElements">
+          <a  href="http://www.facebook.com"><i id="socialIcon" class="fa fa-facebook fa-lg"></i></a>
+           <a  href="http://www.twitter.com"><i id="socialIcon" class="fa fa-twitter fa-lg"></i></a>
+        </div>
+      </footer>
+
+        
+</body>
+
+</html>
