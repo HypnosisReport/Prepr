@@ -1,0 +1,317 @@
+/* ALL */
+
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif
+  }
+
+.brandColour {
+  background-color: #33FF99!important;
+}
+
+/* NAVIGATION BAR */
+
+
+.fa-pagelines:hover {
+-webkit-animation: spin 2s infinite linear;
+-moz-animation: spin 2s infinite linear;
+-o-animation: spin 2s infinite linear;
+animation: spin 2s infinite linear;
+}
+
+
+.navBar {
+  width:100%;
+  overflow:hidden;
+  display: inline-block;
+  width:auto;
+  font-size:17px;
+  background-color: white;
+  }
+
+
+.navBar .barItem { 
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+}
+
+.barItem {
+
+margin-left: .4em;
+margin-top:.4em;
+margin-bottom: .2em;
+}
+
+
+.navButton {
+  border:none;
+  display:inline-block;
+  padding:44px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.navButton:hover  {
+  color: white!important;
+  font-weight: 800;
+  background-color:rgb(31, 204, 219);
+  border-radius: 25px;
+}
+
+.active {
+  color: white!important;
+  font-weight: 800;
+  background-color:rgb(31, 204, 219);
+  border-radius: 25px;
+}
+
+.navBar .navButton {
+  white-space:normal
+}
+
+/* HERO IMG */
+
+.bg-img {
+  background-image: url("../img/Background/fancyFood.jpg");
+  min-height: 700px;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+/* SEARCH BAR */
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #EA6329;
+  background-color: white;
+  border-right: none;
+  padding: 20px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #EA6329;
+}
+
+
+::placeholder {
+  color:#EA6329;
+  font-size: 16px;
+}
+
+
+.searchButton {
+  width: 50px;
+  height: 46px;
+  border: 1px solid #EA6329;
+  background: #EA6329;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* RECIPE SECTION */ 
+
+#output {
+  background-color: #EDE5E3;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.outputDiv {
+  background-color: darkblue;
+  color:white;
+  font-weight: 600;
+  width: 26%;
+  text-align: center;
+ justify-content: center;
+  margin: 1em 1em 1em 1em;
+  height: 70%;
+}
+
+#output h3 {
+text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(31, 204, 219);;
+  width: 100%;
+  height: 10vh;
+  }
+
+#signOff {
+  max-width: 50%;
+  margin: 0;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+#socials {
+  max-width: 50%;
+    color: darkblue;
+  } 
+
+#socialIcon:hover {
+  color: #EA6329;
+}
+
+
+  * {
+  box-sizing: border-box;
+}
+
+
+                  /* contact.html CSS */
+
+                  
+
+  .contactForm {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 2em;
+    margin-top: 4em;
+    border: 4px solid darkblue;
+    background-color: darkblue;
+    border-radius: 9px;
+    border: 3px solid rgb(31, 204, 219);
+  }
+
+  #formTitle {
+    text-align: center;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    border-bottom: 2px solid white;
+    border-width: 50%;
+  }
+
+
+  input[type=submit] {
+      padding: 8px;
+      background-color: rgb(31, 204, 219);
+      border-radius: 25px;
+      width: 50%;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 700;
+      margin:0 auto;
+      display:block;
+  }
+
+  input[type=submit]:hover {
+    background-color: #EA6329
+  }
+
+  input[type=text], textarea {
+    border: 2px solid rgb(31, 204, 219);
+  }
+
+  form > ::placeholder {
+    padding-left: 6px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+  }
+
+  input[type=text]:focus, textarea:focus, input[type=text]:visited, textarea:visited {
+    width: 150px;
+   -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background-color: #EA6329;
+    border: 2px solid #EA6329;
+    width: 100%;
+    color: white;
+  }  
+
+textarea, input[type=text] {
+border: 2px solid rgb(31, 204, 219)s;
+  border-radius: 5px;
+}
+
+    .subTitle {
+    border-bottom: 1px;
+    font-weight: 600;
+    padding-bottom: 1px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+  }
+  
+  
+  #email, #reason, #messageGroup {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 4px;
+  }
+  
+
+                  /* prep.html CSS */
+
+  #filter {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: white;
+    width: 80vw;
+    height: 9vh;
+    margin-top: .1em;
+    border: 4px solid darkblue;
+    background-color: darkblue;
+    border-radius: 9px;
+    /*border: 3px solid #EA6329;*/
+    display: flex;
+    justify-content: center;
+    margin: auto;
+                  }
+
+  #filterBtn {
+    justify-content: space-evenly;
+    margin: .5em;
+  }
+
+  #filterOutput {
+    background-color: #EDE5E3;
+    align-content: center;
+    width: 85vw;
+    height: 80vh;
+    margin: auto;
+    border: 4px solid darkblue;
+  }
